@@ -13,7 +13,7 @@ function Avatar({ image, firstName, lastName, nbDonuts }: AvatarProps) {
         <div>
             <img src={image} alt={`${firstName} ${lastName.toUpperCase()}`} />
             <p>{firstName} {lastName === 'Simpson' ? lastName.toUpperCase() : lastName}</p>
-            <button onClick={() => setDonut(donut + 1)}> 🍩</button>
+            <button onClick={() => setDonut(donut + 1)}>{donut}🍩</button>
         </div>
     );
 }
